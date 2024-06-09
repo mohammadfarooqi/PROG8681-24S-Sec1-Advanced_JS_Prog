@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>App</title>
+    <style>
+      #tasks {
+        float: right;
+        width: 25em;
+        margin: 0 0 0.5em;
+        padding: 1em;
+        border: 2px solid black;
+        min-height: 5em;
+      }
+      #tasks a {
+        margin-right: 0.5em;
+      }
+      .clear {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Task List</h1>
+      <div id="tasks"></div>
+      <div>
+        <label for="task">Task:</label>
+        <input type="text" name="task" id="task" />
+      </div>
+      <div>
+        <label for="due_date">Due Date:</label>
+        <input type="text" name="due_date" id="due_date" />
+      </div>
+      <div>
+        <input type="button" id="add_task" value="Add Task" />
+        <input type="button" id="clear_tasks" value="Clear Tasks" />
+      </div>
+      <div class="clear"></div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="lib_task.js"></script>
+    <script src="lib_storage.js"></script>
+    <script src="lib_task_list.js"></script>
+    <script src="task_list.js"></script>
+  </body>
+</html>
